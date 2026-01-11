@@ -81,9 +81,6 @@ export function WaitlistForm({ className = '', showToolSelect = true }: Waitlist
 
             setFormState('success')
 
-            // Show success alert
-            alert('🎉 Success! You\'re on the waitlist. We\'ll notify you when we launch!')
-
             setEmail('')
             setTool('')
 
@@ -126,7 +123,7 @@ export function WaitlistForm({ className = '', showToolSelect = true }: Waitlist
                                 value={email}
                                 onChange={handleEmailChange}
                                 disabled={formState === 'loading' || formState === 'success'}
-                                className="h-12 flex-1 border-0 bg-transparent px-4 text-sm text-white placeholder:text-gray-600 focus-visible:ring-0 focus-visible:ring-offset-0 disabled:opacity-50"
+                                className="h-12 flex-1 border-0 bg-transparent px-4 text-base text-white placeholder:text-gray-600 focus-visible:ring-0 focus-visible:ring-offset-0 disabled:opacity-50"
                             />
 
                             {/* Tool Selection Inside Input */}
@@ -137,8 +134,8 @@ export function WaitlistForm({ className = '', showToolSelect = true }: Waitlist
                                         onValueChange={setTool}
                                         disabled={formState === 'loading' || formState === 'success'}
                                     >
-                                        <SelectTrigger className="h-12 w-[95px] border-0 bg-transparent text-xs text-gray-500 shadow-none hover:text-gray-300 focus:ring-0 focus:ring-offset-0 data-[placeholder]:text-gray-500">
-                                            <SelectValue placeholder="Tool" />
+                                        <SelectTrigger className="h-12 w-auto min-w-[100px] border-0 bg-transparent px-2 text-[11px] text-gray-500 shadow-none hover:text-gray-300 focus:ring-0 focus:ring-offset-0 data-[placeholder]:text-gray-500">
+                                            <SelectValue placeholder="Tool (optional)" />
                                         </SelectTrigger>
                                         <SelectContent className="bg-[#09090b] border-white/10">
                                             <SelectItem value="make" className="text-white text-xs focus:bg-white/10 focus:text-white">Make</SelectItem>
