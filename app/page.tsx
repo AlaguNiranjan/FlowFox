@@ -1,174 +1,154 @@
 'use client'
 
+import { Badge } from '@/components/ui/badge'
+import { Button } from '@/components/ui/button'
+import { WaitlistForm } from '@/components/waitlist-form'
+import { Spotlight } from '@/components/ui/spotlight'
 import {
-  Upload,
-  FileCheck,
-  PlayCircle,
   Sparkles,
   Zap,
-  Shield,
+  GitBranch,
+  Bug,
+  Users,
+  Upload,
+  Download,
+  Search,
+  Bot,
+  Gauge,
+  Link2,
+  BarChart3,
+  UsersRound,
+  Check,
+  X,
   ArrowRight,
-  CheckCircle2,
-  Code2,
-  RefreshCcw,
-  Eye,
-  AlertCircle,
-  Clock,
-  TrendingUp,
-  Layers,
+  Quote,
 } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Badge } from '@/components/ui/badge'
-import { Spotlight } from '@/components/ui/spotlight'
-import { WaitlistForm } from '@/components/waitlist-form'
 
 // ============================================================================
-// FlowGuard Landing Page - Luxury Minimalist with Rich Details
+// WorkflowTest Landing Page - CodeRabbit Positioning
+// "AI Code Review for Automation Workflows"
 // ============================================================================
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen overflow-hidden bg-[#09090b] text-white">
-
-      {/* Background */}
-      <div className="pointer-events-none fixed inset-0 overflow-hidden">
-        <div
-          className="absolute inset-0 opacity-30"
-          style={{
-            background: `
-              radial-gradient(ellipse 80% 50% at 20% 20%, rgba(255,255,255,0.03), transparent),
-              radial-gradient(ellipse 60% 40% at 80% 80%, rgba(255,255,255,0.02), transparent)
-            `,
-          }}
-        />
-        <div
-          className="absolute h-[500px] w-[500px] rounded-full blur-[100px]"
-          style={{
-            left: '5%',
-            top: '10%',
-            background: 'radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%)',
-            animation: 'float1 20s ease-in-out infinite',
-          }}
-        />
-        <div
-          className="absolute h-[400px] w-[400px] rounded-full blur-[80px]"
-          style={{
-            right: '10%',
-            top: '40%',
-            background: 'radial-gradient(circle, rgba(255,255,255,0.02) 0%, transparent 70%)',
-            animation: 'float2 25s ease-in-out infinite',
-          }}
-        />
+    <main className="relative min-h-screen bg-[#09090b] text-white overflow-x-hidden">
+      {/* Background gradient effects - Luxury Premium */}
+      <div className="pointer-events-none fixed inset-0 z-0">
+        <div className="absolute -left-20 top-0 h-[600px] w-[600px] rounded-full bg-white/[0.03] blur-[150px]" />
+        <div className="absolute right-0 top-1/4 h-[500px] w-[500px] rounded-full bg-white/[0.02] blur-[130px]" />
+        <div className="absolute left-1/3 top-1/2 h-[400px] w-[400px] rounded-full bg-white/[0.02] blur-[120px]" />
       </div>
 
-      <style jsx>{`
-        @keyframes float1 {
-          0%, 100% { transform: translate(0, 0); }
-          50% { transform: translate(30px, 20px); }
-        }
-        @keyframes float2 {
-          0%, 100% { transform: translate(0, 0); }
-          50% { transform: translate(-30px, -20px); }
-        }
+      {/* Animations */}
+      <style>{`
         @keyframes pulse-glow {
-          0%, 100% { opacity: 0.6; }
-          50% { opacity: 1; }
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0.7; }
         }
-        @keyframes spotlight {
-          0% { opacity: 0; transform: translate(-72%, -62%) scale(0.5); }
-          100% { opacity: 1; transform: translate(-50%, -40%) scale(1); }
+        @keyframes aurora {
+          0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.15; }
+          50% { transform: translateY(-20px) rotate(2deg); opacity: 0.25; }
         }
       `}</style>
 
-      {/* HEADER - Centered App Name */}
+      {/* HEADER */}
       <header className="absolute inset-x-0 top-0 z-20 border-b border-white/10 py-4 md:py-6">
         <div className="flex items-center justify-center">
-          <span className="font-[family-name:var(--font-space-grotesk)] text-xl font-bold tracking-wider text-white sm:text-2xl md:text-3xl">FlowGuard</span>
+          <span className="font-[family-name:var(--font-space-grotesk)] text-xl font-bold tracking-wider text-white sm:text-2xl md:text-3xl">
+            FlowFox
+          </span>
         </div>
       </header>
 
-      {/* HERO SECTION with Spotlight */}
-      <section className="relative z-10 px-6 pt-16 pb-8 md:pt-24 md:pb-12 overflow-hidden">
-        {/* Aceternity Spotlight */}
+      {/* HERO SECTION */}
+      <section className="relative z-10 px-6 pt-24 pb-12 md:pt-32 md:pb-20 overflow-hidden">
+        {/* Aceternity UI Spotlights */}
         <Spotlight
           className="-top-40 left-0 md:left-60 md:-top-20"
           fill="white"
         />
-        <div className="mx-auto max-w-4xl text-center">
-          <Badge className="mb-6 gap-1.5 border-white/10 bg-white/5 px-3 py-1.5 text-xs text-gray-400">
+        <div className="mx-auto max-w-5xl text-center">
+          <Badge className="mb-6 gap-1.5 border-white/20 bg-white/5 px-3 py-1.5 text-xs text-gray-300">
             <Sparkles className="h-3.5 w-3.5" />
-            Early Access 2026
+            Now in Early Access
           </Badge>
 
-          <h1 className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
-            <span className="text-white">Stop Debugging.</span>
+          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+            <span className="text-white">AI Code Review for</span>
             <br />
-            <span className="text-gray-500">Start Shipping.</span>
+            <span className="text-gray-400">
+              Automation Workflows
+            </span>
           </h1>
 
-          <p className="mx-auto mt-4 max-w-lg text-sm text-gray-500 md:text-base">
-            The first testing platform built for no-code automation.
-            Test Make, n8n & Zapier workflows before they break in production.
+          <p className="mx-auto mt-6 max-w-2xl text-sm text-gray-400 sm:text-base md:text-lg px-4 sm:px-0">
+            Like CodeRabbit for Make, n8n, and Zapier. Catch bugs before deployment,
+            get AI-powered fixes, and ship with confidence.
           </p>
 
-          <WaitlistForm className="max-w-md mx-auto mt-6" />
+          <WaitlistForm className="max-w-md mx-auto mt-8" showToolSelect={false} />
 
-          <p className="mt-2 text-sm font-medium text-gray-400">
+          <p className="mt-3 text-sm text-gray-500">
             <span
-              className="inline-block text-white font-bold"
+              className="text-white font-semibold inline-block"
               style={{ animation: 'pulse-glow 2s ease-in-out infinite' }}
             >500+</span> developers on the waitlist
           </p>
         </div>
       </section>
 
-      {/* TRUSTED BY - Text only, bigger & stylish */}
-      <section className="relative z-10 px-6 py-8">
+      {/* BUILT FOR TEAMS USING */}
+      <section className="relative z-10 border-b border-white/5 px-6 py-8">
         <div className="mx-auto max-w-4xl text-center">
-          <p className="mb-4 text-xs uppercase tracking-[0.2em] text-gray-600">
-            Built for teams using
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 sm:gap-x-8 md:gap-x-12">
-            <span className="text-xl font-bold tracking-tight text-white opacity-60 transition-opacity hover:opacity-100 sm:text-2xl md:text-3xl">n8n</span>
-            <span className="text-xl font-bold tracking-tight text-white opacity-60 transition-opacity hover:opacity-100 sm:text-2xl md:text-3xl">Make</span>
-            <span className="text-xl font-bold tracking-tight text-white opacity-60 transition-opacity hover:opacity-100 sm:text-2xl md:text-3xl">Zapier</span>
-            <span className="text-xl font-bold tracking-tight text-white opacity-60 transition-opacity hover:opacity-100 sm:text-2xl md:text-3xl">Airtable</span>
-            <span className="text-xl font-bold tracking-tight text-white opacity-60 transition-opacity hover:opacity-100 sm:text-2xl md:text-3xl">Notion</span>
+          <p className="mb-8 text-xs uppercase tracking-[0.3em] text-gray-600">Built for teams using</p>
+          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 md:gap-x-16">
+            <span className="text-2xl font-bold text-gray-500 transition-colors hover:text-white md:text-3xl">n8n</span>
+            <span className="text-2xl font-bold text-gray-500 transition-colors hover:text-white md:text-3xl">Make</span>
+            <span className="text-2xl font-bold text-gray-500 transition-colors hover:text-white md:text-3xl">Zapier</span>
+            <span className="text-2xl font-bold text-gray-500 transition-colors hover:text-white md:text-3xl">Airtable</span>
+            <span className="text-2xl font-bold text-gray-500 transition-colors hover:text-white md:text-3xl">Notion</span>
           </div>
         </div>
       </section>
 
       {/* PROBLEM SECTION */}
-      <section className="relative z-10 border-y border-white/5 px-6 py-10 md:py-14">
+      <section className="relative z-10 px-6 py-16 md:py-24">
         <div className="mx-auto max-w-5xl">
-          <div className="mb-8 text-center">
-            <p className="mb-2 text-xs uppercase tracking-[0.15em] text-gray-600">The Problem</p>
-            <h2 className="text-2xl font-bold text-white md:text-3xl">
-              Automations break. Often silently.
+          <div className="mb-12 text-center">
+            <p className="mb-2 text-xs uppercase tracking-[0.2em] text-gray-600">The Problem</p>
+            <h2 className="text-3xl font-bold text-white md:text-4xl">
+              Automation Workflows Aren&apos;t Code-Reviewed
             </h2>
           </div>
 
-          <div className="grid gap-4 md:grid-cols-3">
-            <div className="rounded-xl border border-white/5 bg-white/[0.02] p-5">
-              <AlertCircle className="mb-3 h-5 w-5 text-gray-500" />
-              <h3 className="mb-1 text-sm font-semibold text-white">Silent Failures</h3>
-              <p className="text-xs text-gray-500 leading-relaxed">
-                API changes, schema updates, and edge cases cause workflows to fail without warning. You find out from angry users.
+          <div className="grid gap-6 md:grid-cols-3">
+            <div className="group rounded-2xl border border-white/5 bg-white/[0.02] p-6 transition-all hover:border-white/20 hover:bg-white/[0.04]">
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-white/5">
+                <GitBranch className="h-6 w-6 text-gray-400" />
+              </div>
+              <h3 className="mb-2 text-lg font-semibold text-white">No review process for workflows</h3>
+              <p className="text-sm text-gray-500">
+                You review code. Why not review automations? Workflows go to production unchecked.
               </p>
             </div>
-            <div className="rounded-xl border border-white/5 bg-white/[0.02] p-5">
-              <Clock className="mb-3 h-5 w-5 text-gray-500" />
-              <h3 className="mb-1 text-sm font-semibold text-white">Hours Wasted</h3>
-              <p className="text-xs text-gray-500 leading-relaxed">
-                Teams spend 10-40 hours monthly debugging workflows. That&apos;s entire workweeks lost to preventable issues.
+
+            <div className="group rounded-2xl border border-white/5 bg-white/[0.02] p-6 transition-all hover:border-white/20 hover:bg-white/[0.04]">
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-white/5">
+                <Bug className="h-6 w-6 text-gray-400" />
+              </div>
+              <h3 className="mb-2 text-lg font-semibold text-white">Bugs caught in production</h3>
+              <p className="text-sm text-gray-500">
+                Broken workflows = lost revenue + debugging hours. You find issues from angry users.
               </p>
             </div>
-            <div className="rounded-xl border border-white/5 bg-white/[0.02] p-5">
-              <TrendingUp className="mb-3 h-5 w-5 text-gray-500" />
-              <h3 className="mb-1 text-sm font-semibold text-white">No Testing Culture</h3>
-              <p className="text-xs text-gray-500 leading-relaxed">
-                Unlike code, automations lack staging environments. You test in production and hope for the best.
+
+            <div className="group rounded-2xl border border-white/5 bg-white/[0.02] p-6 transition-all hover:border-white/20 hover:bg-white/[0.04]">
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-white/5">
+                <Users className="h-6 w-6 text-gray-400" />
+              </div>
+              <h3 className="mb-2 text-lg font-semibold text-white">No second pair of eyes</h3>
+              <p className="text-sm text-gray-500">
+                Solo developers ship without feedback. Even teams lack workflow review culture.
               </p>
             </div>
           </div>
@@ -176,156 +156,244 @@ export default function Home() {
       </section>
 
       {/* SOLUTION - HOW IT WORKS */}
-      <section className="relative z-10 px-6 py-10 md:py-14">
+      <section className="relative z-10 border-y border-white/5 bg-white/[0.01] px-6 py-16 md:py-24">
         <div className="mx-auto max-w-5xl">
-          <div className="mb-8 text-center">
-            <p className="mb-2 text-xs uppercase tracking-[0.15em] text-gray-600">The Solution</p>
-            <h2 className="text-2xl font-bold text-white md:text-3xl">
-              Test workflows like a developer
+          <div className="mb-12 text-center">
+            <p className="mb-2 text-xs uppercase tracking-[0.2em] text-gray-600">The Solution</p>
+            <h2 className="text-3xl font-bold text-white md:text-4xl">
+              How FlowFox Reviews Your Automations
             </h2>
-            <p className="mx-auto mt-2 max-w-md text-sm text-gray-500">
-              FlowGuard brings software engineering best practices to no-code
-            </p>
           </div>
 
-          <div className="grid gap-4 md:grid-cols-3">
-            <div className="group rounded-xl border border-white/5 bg-white/[0.02] p-5 text-center transition-all hover:border-white/10 hover:bg-white/[0.04]">
-              <div className="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-white text-base font-bold text-black">
-                1
+          <div className="grid gap-8 md:grid-cols-3">
+            <div className="relative text-center">
+              <div className="relative mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 border border-white/20 shadow-lg">
+                <Upload className="h-7 w-7 text-white" />
+                <span className="absolute -right-2 -top-2 flex h-6 w-6 items-center justify-center rounded-full bg-white text-xs font-bold text-black">1</span>
               </div>
-              <Upload className="mx-auto mb-3 h-6 w-6 text-gray-500 group-hover:text-white transition-colors" />
-              <h3 className="mb-1 text-sm font-semibold text-white">Import Workflow</h3>
-              <p className="text-xs text-gray-500">
-                Paste your workflow JSON or connect directly to Make, n8n, or Zapier
+              <h3 className="mb-2 text-lg font-semibold text-white">Upload or Connect</h3>
+              <p className="text-sm text-gray-500">
+                Export JSON or connect your Make/n8n account directly for seamless sync.
               </p>
             </div>
 
-            <div className="group rounded-xl border border-white/5 bg-white/[0.02] p-5 text-center transition-all hover:border-white/10 hover:bg-white/[0.04]">
-              <div className="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-white text-base font-bold text-black">
-                2
+            <div className="relative text-center">
+              <div className="relative mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 border border-white/20 shadow-lg">
+                <Sparkles className="h-7 w-7 text-white" />
+                <span className="absolute -right-2 -top-2 flex h-6 w-6 items-center justify-center rounded-full bg-white text-xs font-bold text-black">2</span>
               </div>
-              <FileCheck className="mx-auto mb-3 h-6 w-6 text-gray-500 group-hover:text-white transition-colors" />
-              <h3 className="mb-1 text-sm font-semibold text-white">Define Expectations</h3>
-              <p className="text-xs text-gray-500">
-                Set assertions for each step. What data should flow? What should trigger?
+              <h3 className="mb-2 text-lg font-semibold text-white">AI Reviews Every Step</h3>
+              <p className="text-sm text-gray-500">
+                Claude analyzes logic, data flow, and error handling in seconds.
               </p>
             </div>
 
-            <div className="group rounded-xl border border-white/5 bg-white/[0.02] p-5 text-center transition-all hover:border-white/10 hover:bg-white/[0.04]">
-              <div className="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-white text-base font-bold text-black">
-                3
+            <div className="relative text-center">
+              <div className="relative mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 border border-white/20 shadow-lg">
+                <Download className="h-7 w-7 text-white" />
+                <span className="absolute -right-2 -top-2 flex h-6 w-6 items-center justify-center rounded-full bg-white text-xs font-bold text-black">3</span>
               </div>
-              <PlayCircle className="mx-auto mb-3 h-6 w-6 text-gray-500 group-hover:text-white transition-colors" />
-              <h3 className="mb-1 text-sm font-semibold text-white">Run & Monitor</h3>
-              <p className="text-xs text-gray-500">
-                Get instant AI-powered feedback. Schedule recurring tests for peace of mind
+              <h3 className="mb-2 text-lg font-semibold text-white">Get Instant Fixes</h3>
+              <p className="text-sm text-gray-500">
+                Download corrected workflow or apply fixes automatically with one click.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* STATS */}
-      <section className="relative z-10 border-y border-white/5 bg-white/[0.01] px-4 py-6 sm:px-6 sm:py-8">
-        <div className="mx-auto grid max-w-4xl grid-cols-2 gap-4 sm:grid-cols-4">
-          <div className="text-center">
-            <p className="text-xl font-bold text-white sm:text-2xl md:text-3xl">20+</p>
-            <p className="mt-0.5 text-[10px] text-gray-600 sm:text-xs">Hours saved/mo</p>
+      {/* FEATURES SECTION */}
+      <section className="relative z-10 px-6 py-16 md:py-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-12 text-center">
+            <p className="mb-2 text-xs uppercase tracking-[0.2em] text-gray-600">Features</p>
+            <h2 className="text-3xl font-bold text-white md:text-4xl">
+              Everything You Need for Reliable Workflows
+            </h2>
           </div>
-          <div className="text-center">
-            <p className="text-xl font-bold text-white sm:text-2xl md:text-3xl">99.9%</p>
-            <p className="mt-0.5 text-[10px] text-gray-600 sm:text-xs">Detection rate</p>
-          </div>
-          <div className="text-center">
-            <p className="text-xl font-bold text-white sm:text-2xl md:text-3xl">30s</p>
-            <p className="mt-0.5 text-[10px] text-gray-600 sm:text-xs">Test time</p>
-          </div>
-          <div className="text-center">
-            <p className="text-xl font-bold text-white sm:text-2xl md:text-3xl">500+</p>
-            <p className="mt-0.5 text-[10px] text-gray-600 sm:text-xs">On waitlist</p>
+
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="group rounded-2xl border border-white/5 bg-white/[0.02] p-6 transition-all hover:border-white/20 hover:bg-white/[0.04]">
+              <Search className="mb-4 h-8 w-8 text-gray-400" />
+              <h4 className="mb-2 text-lg font-semibold text-white">Deep Analysis</h4>
+              <ul className="space-y-1.5 text-sm text-gray-500">
+                <li>• Logic errors detection</li>
+                <li>• Missing error handlers</li>
+                <li>• Data type mismatches</li>
+                <li>• Inefficient routing</li>
+              </ul>
+            </div>
+
+            <div className="group rounded-2xl border border-white/5 bg-white/[0.02] p-6 transition-all hover:border-white/20 hover:bg-white/[0.04]">
+              <Bot className="mb-4 h-8 w-8 text-gray-400" />
+              <h4 className="mb-2 text-lg font-semibold text-white">Auto-Fix</h4>
+              <ul className="space-y-1.5 text-sm text-gray-500">
+                <li>• AI generates corrected workflow</li>
+                <li>• Before/after diff view</li>
+                <li>• One-click download</li>
+                <li>• Direct push to Make/n8n</li>
+              </ul>
+            </div>
+
+            <div className="group rounded-2xl border border-white/5 bg-white/[0.02] p-6 transition-all hover:border-white/20 hover:bg-white/[0.04]">
+              <Gauge className="mb-4 h-8 w-8 text-gray-400" />
+              <h4 className="mb-2 text-lg font-semibold text-white">Fast Reviews</h4>
+              <ul className="space-y-1.5 text-sm text-gray-500">
+                <li>• Results in &lt; 30 seconds</li>
+                <li>• Step-by-step feedback</li>
+                <li>• Actionable suggestions</li>
+                <li>• No manual checking</li>
+              </ul>
+            </div>
+
+            <div className="group rounded-2xl border border-white/5 bg-white/[0.02] p-6 transition-all hover:border-white/20 hover:bg-white/[0.04]">
+              <Link2 className="mb-4 h-8 w-8 text-gray-400" />
+              <h4 className="mb-2 text-lg font-semibold text-white">Direct Integration</h4>
+              <ul className="space-y-1.5 text-sm text-gray-500">
+                <li>• Connect Make.com account</li>
+                <li>• Connect n8n (Cloud + self-hosted)</li>
+                <li>• Auto-fetch workflows</li>
+                <li>• Auto-apply fixes</li>
+              </ul>
+            </div>
+
+            <div className="group rounded-2xl border border-white/5 bg-white/[0.02] p-6 transition-all hover:border-white/20 hover:bg-white/[0.04]">
+              <BarChart3 className="mb-4 h-8 w-8 text-gray-400" />
+              <h4 className="mb-2 text-lg font-semibold text-white">Quality Metrics</h4>
+              <ul className="space-y-1.5 text-sm text-gray-500">
+                <li>• Workflow complexity score</li>
+                <li>• Error probability rating</li>
+                <li>• Best practice compliance</li>
+                <li>• Trend tracking</li>
+              </ul>
+            </div>
+
+            <div className="group rounded-2xl border border-white/5 bg-white/[0.02] p-6 transition-all hover:border-white/20 hover:bg-white/[0.04]">
+              <UsersRound className="mb-4 h-8 w-8 text-gray-400" />
+              <h4 className="mb-2 text-lg font-semibold text-white">Team Reviews</h4>
+              <ul className="space-y-1.5 text-sm text-gray-500">
+                <li>• Share workflows with team</li>
+                <li>• Collaborative feedback</li>
+                <li>• Approval workflows</li>
+                <li>• Activity history</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* FEATURES */}
-      <section className="relative z-10 px-6 py-10 md:py-14">
-        <div className="mx-auto max-w-5xl">
-          <div className="mb-8 text-center">
-            <p className="mb-2 text-xs uppercase tracking-[0.15em] text-gray-600">Features</p>
-            <h2 className="text-2xl font-bold text-white md:text-3xl">
-              Everything you need to ship confidently
+      {/* COMPARISON TABLE */}
+      <section className="relative z-10 border-y border-white/5 bg-white/[0.01] px-6 py-16 md:py-24">
+        <div className="mx-auto max-w-3xl">
+          <div className="mb-12 text-center">
+            <p className="mb-2 text-xs uppercase tracking-[0.2em] text-gray-600">Comparison</p>
+            <h2 className="text-3xl font-bold text-white md:text-4xl">
+              FlowFox vs Manual Reviews
             </h2>
           </div>
 
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            <div className="group rounded-xl border border-white/5 bg-white/[0.02] p-4 transition-all hover:border-white/10 hover:bg-white/[0.04]">
-              <Code2 className="mb-2 h-5 w-5 text-gray-500 group-hover:text-white transition-colors" />
-              <h4 className="mb-1 text-sm font-semibold text-white">Visual Debugger</h4>
-              <p className="text-xs text-gray-500">Step through each node. See exactly where things fail.</p>
-            </div>
-            <div className="group rounded-xl border border-white/5 bg-white/[0.02] p-4 transition-all hover:border-white/10 hover:bg-white/[0.04]">
-              <RefreshCcw className="mb-2 h-5 w-5 text-gray-500 group-hover:text-white transition-colors" />
-              <h4 className="mb-1 text-sm font-semibold text-white">Scheduled Tests</h4>
-              <p className="text-xs text-gray-500">Run tests hourly, daily, or weekly. Get alerts on failures.</p>
-            </div>
-            <div className="group rounded-xl border border-white/5 bg-white/[0.02] p-4 transition-all hover:border-white/10 hover:bg-white/[0.04]">
-              <Eye className="mb-2 h-5 w-5 text-gray-500 group-hover:text-white transition-colors" />
-              <h4 className="mb-1 text-sm font-semibold text-white">AI Analysis</h4>
-              <p className="text-xs text-gray-500">Smart detection of edge cases and potential failure points.</p>
-            </div>
-            <div className="group rounded-xl border border-white/5 bg-white/[0.02] p-4 transition-all hover:border-white/10 hover:bg-white/[0.04]">
-              <Layers className="mb-2 h-5 w-5 text-gray-500 group-hover:text-white transition-colors" />
-              <h4 className="mb-1 text-sm font-semibold text-white">Multi-Platform</h4>
-              <p className="text-xs text-gray-500">Works with Make, n8n, Zapier. More integrations coming.</p>
-            </div>
-          </div>
-
-          {/* Security note */}
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-3 text-[10px] text-gray-600 sm:gap-4 sm:text-xs">
-            <div className="flex items-center gap-1.5">
-              <Shield className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
-              <span>End-to-end encrypted</span>
-            </div>
-            <span className="hidden text-gray-700 sm:inline">•</span>
-            <div className="flex items-center gap-1.5">
-              <CheckCircle2 className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
-              <span>No credential storage</span>
-            </div>
-            <span className="hidden text-gray-700 sm:inline">•</span>
-            <div className="flex items-center gap-1.5">
-              <CheckCircle2 className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
-              <span>GDPR compliant</span>
-            </div>
+          <div className="overflow-hidden rounded-2xl border border-white/10">
+            <table className="w-full">
+              <thead>
+                <tr className="border-b border-white/10 bg-white/5">
+                  <th className="px-4 py-4 text-left text-sm font-medium text-gray-400 md:px-6">Task</th>
+                  <th className="px-4 py-4 text-center text-sm font-medium text-gray-400 md:px-6">Manual</th>
+                  <th className="px-4 py-4 text-center text-sm font-medium text-white md:px-6">FlowFox</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-white/5">
+                <tr>
+                  <td className="px-4 py-4 text-sm text-white md:px-6">Review time</td>
+                  <td className="px-4 py-4 text-center text-sm text-gray-500 md:px-6">30-60 min</td>
+                  <td className="px-4 py-4 text-center text-sm font-medium text-white md:px-6">&lt; 30 sec</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-4 text-sm text-white md:px-6">Find logic errors</td>
+                  <td className="px-4 py-4 text-center md:px-6">
+                    <span className="inline-flex items-center gap-1 text-sm text-red-400">
+                      <X className="h-4 w-4" /> Miss 40%
+                    </span>
+                  </td>
+                  <td className="px-4 py-4 text-center md:px-6">
+                    <span className="inline-flex items-center gap-1 text-sm text-white">
+                      <Check className="h-4 w-4" /> Catch 95%
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-4 text-sm text-white md:px-6">Suggest fixes</td>
+                  <td className="px-4 py-4 text-center md:px-6">
+                    <span className="inline-flex items-center gap-1 text-sm text-red-400">
+                      <X className="h-4 w-4" /> Manual
+                    </span>
+                  </td>
+                  <td className="px-4 py-4 text-center md:px-6">
+                    <span className="inline-flex items-center gap-1 text-sm text-white">
+                      <Check className="h-4 w-4" /> Auto-generated
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-4 text-sm text-white md:px-6">Apply fixes</td>
+                  <td className="px-4 py-4 text-center md:px-6">
+                    <span className="inline-flex items-center gap-1 text-sm text-red-400">
+                      <X className="h-4 w-4" /> Hours
+                    </span>
+                  </td>
+                  <td className="px-4 py-4 text-center md:px-6">
+                    <span className="inline-flex items-center gap-1 text-sm text-white">
+                      <Check className="h-4 w-4" /> One-click
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-4 text-sm text-white md:px-6">Track history</td>
+                  <td className="px-4 py-4 text-center md:px-6">
+                    <span className="inline-flex items-center gap-1 text-sm text-red-400">
+                      <X className="h-4 w-4" /> None
+                    </span>
+                  </td>
+                  <td className="px-4 py-4 text-center md:px-6">
+                    <span className="inline-flex items-center gap-1 text-sm text-white">
+                      <Check className="h-4 w-4" /> Full audit
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
 
       {/* FINAL CTA */}
-      <section className="relative z-10 border-t border-white/5 bg-white/[0.01] px-6 py-12 md:py-16">
-        <div className="mx-auto max-w-md text-center">
-          <h2 className="mb-4 text-xl font-bold text-white md:text-2xl">
-            Ready to ship with confidence?
+      <section className="relative z-10 border-t border-white/5 bg-gradient-to-b from-white/[0.02] to-transparent px-6 py-20 md:py-28">
+        <div className="mx-auto max-w-xl text-center">
+          <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
+            Start Reviewing Workflows Today
           </h2>
+          <p className="mb-8 text-base text-gray-400">
+            Join developers shipping reliable automations
+          </p>
 
-          <WaitlistForm className="max-w-sm mx-auto" />
+          <WaitlistForm className="max-w-md mx-auto" showToolSelect={false} />
         </div>
       </section>
 
       {/* FOOTER */}
-      <footer className="relative z-10 border-t border-white/5 px-6 py-6">
-        <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-3 md:flex-row">
+      <footer className="relative z-10 border-t border-white/5 px-6 py-8">
+        <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 md:flex-row">
           <div className="flex items-center gap-2">
-            <div className="flex h-6 w-6 items-center justify-center rounded bg-white">
-              <Zap className="h-3 w-3 text-black" />
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white">
+              <Zap className="h-4 w-4 text-black" />
             </div>
-            <span className="text-sm font-medium text-white">FlowGuard</span>
+            <span className="text-lg font-semibold text-white">FlowFox</span>
           </div>
-          <div className="flex gap-5 text-xs text-gray-600">
-            <span className="cursor-pointer hover:text-white">Privacy</span>
-            <span className="cursor-pointer hover:text-white">Terms</span>
-            <span className="cursor-pointer hover:text-white">Contact</span>
+          <div className="flex gap-6 text-sm text-gray-500">
+            <span className="cursor-pointer transition-colors hover:text-white">Privacy</span>
+            <span className="cursor-pointer transition-colors hover:text-white">Terms</span>
+            <span className="cursor-pointer transition-colors hover:text-white">Contact</span>
           </div>
-          <p className="text-xs text-gray-600">© 2026 FlowGuard</p>
+          <p className="text-sm text-gray-600">© 2026 FlowFox</p>
         </div>
       </footer>
     </main>

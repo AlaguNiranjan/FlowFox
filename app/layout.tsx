@@ -19,8 +19,8 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "FlowGuard - Test Your No-Code Workflows",
-  description: "The first testing platform built for no-code automation. Test Make, n8n & Zapier workflows before they break in production.",
+  title: "FlowFox - AI Code Review for Automation Workflows",
+  description: "Like CodeRabbit for Make, n8n, and Zapier. Catch bugs before deployment, get AI-powered fixes, and ship with confidence.",
 };
 
 export default function RootLayout({
