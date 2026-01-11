@@ -54,7 +54,7 @@ export default function Home() {
       {/* HEADER */}
       <header className="absolute inset-x-0 top-0 z-20 border-b border-white/10 py-4 md:py-6">
         <div className="flex items-center justify-center">
-          <span className="font-[family-name:var(--font-jetbrains-mono)] text-xl font-semibold tracking-tight text-white sm:text-2xl md:text-3xl">
+          <span className="font-[family-name:var(--font-jetbrains-mono)] text-2xl font-semibold tracking-tight text-white sm:text-3xl md:text-4xl">
             FlowFox
           </span>
         </div>
