@@ -84,16 +84,20 @@ export default function Home() {
               </Badge>
 
               <h1 className="font-[family-name:var(--font-jetbrains-mono)] text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-                <span className="text-white">AI Code Review for</span>
+                <span className="text-white">AI Workflow Review for</span>
                 <br />
                 <span className="text-gray-400">
-                  Automation Workflows
+                  Automation Tools
                 </span>
               </h1>
 
               <p className="mx-auto lg:mx-0 mt-6 max-w-2xl text-sm text-gray-400 sm:text-base md:text-lg px-4 sm:px-0">
-                Like CodeRabbit for Make, n8n, and Zapier. Catch bugs before deployment,
-                get AI-powered fixes, and ship with confidence.
+                Catch logic errors, missing validations, and broken paths before deployment.
+                Get AI-powered fixes and ship with confidence.
+              </p>
+
+              <p className="mx-auto lg:mx-0 mt-3 max-w-2xl text-sm text-gray-500 px-4 sm:px-0">
+                Like CodeRabbit — but for Make, n8n, and Zapier workflows.
               </p>
 
               <WaitlistForm className="max-w-md mx-auto lg:mx-0 mt-8" showToolSelect={false} />
