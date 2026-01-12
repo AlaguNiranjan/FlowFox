@@ -110,8 +110,8 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Right side - Screenshot (hidden on mobile) */}
-            <div className="hidden lg:block">
+            {/* Right side - Screenshot */}
+            <div className="mt-8 lg:mt-0">
               <div
                 className="relative rounded-2xl border border-white/10 bg-white/5 p-2 shadow-2xl shadow-white/5"
                 style={{ animation: 'float 6s ease-in-out infinite' }}
